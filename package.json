@@ -558,13 +558,13 @@
     "loader-utils": "^1.4.2",
     "locate-path": "^3.0.0",
     "lodash": "^4.17.21",
+    "lodash._reinterpolate": "^3.0.0",
     "lodash.debounce": "^4.0.8",
     "lodash.memoize": "^4.1.2",
     "lodash.sortby": "^4.7.0",
     "lodash.template": "^4.5.0",
     "lodash.templatesettings": "^4.2.0",
     "lodash.uniq": "^4.5.0",
-    "lodash._reinterpolate": "^3.0.0",
     "loglevel": "^1.9.2",
     "loose-envify": "^1.4.0",
     "lower-case": "^2.0.2",
@@ -807,7 +807,7 @@
     "react-is": "^17.0.2",
     "react-router": "^6.26.2",
     "react-router-dom": "^6.26.2",
-    "react-scripts": "^3.4.4",
+    "react-scripts": "^5.0.1",
     "read-pkg": "^2.0.0",
     "read-pkg-up": "^2.0.0",
     "readable-stream": "^2.3.8",
@@ -924,6 +924,7 @@
     "stream-http": "^2.8.3",
     "stream-shift": "^1.0.3",
     "strict-uri-encode": "^1.1.0",
+    "string_decoder": "^1.1.1",
     "string-length": "^2.0.0",
     "string-width": "^4.2.3",
     "string.prototype.matchall": "^4.0.11",
@@ -931,7 +932,6 @@
     "string.prototype.trimend": "^1.0.8",
     "string.prototype.trimstart": "^1.0.8",
     "stringify-object": "^3.3.0",
-    "string_decoder": "^1.1.1",
     "strip-ansi": "^5.2.0",
     "strip-bom": "^3.0.0",
     "strip-comments": "^1.0.2",
@@ -1025,7 +1025,8 @@
     "wbuf": "^1.7.3",
     "web-vitals": "^2.1.4",
     "webidl-conversions": "^4.0.2",
-    "webpack": "^4.42.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
     "webpack-dev-middleware": "^3.7.3",
     "webpack-dev-server": "^3.11.0",
     "webpack-log": "^2.0.0",
@@ -1076,11 +1077,25 @@
     "yargs": "^13.3.2",
     "yargs-parser": "^13.1.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
